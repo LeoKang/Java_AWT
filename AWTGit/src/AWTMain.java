@@ -30,6 +30,12 @@ public class AWTMain {
 				System.exit(0);
 			}
 		});
+		
+		fSecond.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				fSecond.dispose();
+			}
+		});
 
 		btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
